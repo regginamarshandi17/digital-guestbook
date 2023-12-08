@@ -5,6 +5,8 @@ use App\Http\Controllers\Create;
 use App\Http\Controllers\Read;
 use App\Http\Controllers\Update;
 use App\Http\Controllers\Delete;
+use App\Http\Controllers\Save;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +27,8 @@ Route::get('/create', [Create::class, 'create']);
 Route::get('/read', [Read::class, 'read']);
 Route::get('/update', [Update::class, 'update']);
 Route::get('/delete', [Delete::class, 'delete']);
+Route::post('/read', [Save::class, 'save']);
 
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

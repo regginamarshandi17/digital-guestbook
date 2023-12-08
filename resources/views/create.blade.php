@@ -2,7 +2,7 @@
 @section('konten')
 
 <div class="form-group">
-<form action="/read" method="post">
+<form action="read" method="post">
 
     {{ csrf_field() }}
     <label for="nama">Name</label>
@@ -15,7 +15,10 @@
     <label for="Alamat">Alamat</label>
     <input type="alamat" name="alamat" id="alamat" class ="form-control"> </br>
 
-    <input type="submit" value="Save" class="btn btn-success">
+    <label for="no_telepon">No Telepon</label>
+    <input type="no_telepon" name="no_telepon" id="no_telepon" class ="form-control"> </br>
+
+    <input type="submit" value="Save" class="btn btn-warning">
 </form>
 </div>
 @stop
