@@ -19,21 +19,22 @@
 
 </head>
 <body>
-	<div class="container">
+	<div class="container width-auto">
         <div class="card">
-            <div class="card-body vh-100">
+            <div class="card-body vh-auto">
                 <div class="">
-                <h1 class="text-center font-weight-bolder ">selamat datang</h1>
+                <h1 class="text-center font-weight-bolder ">iGuestBookGin💕</h1>
                 </div>
                 <hr>
 				<nav class="navbar navbar-expand-lg navbar-light bg-warning">
 					<div class="containerr-fluids">
 				
-					<a href="/create"><button class="btn btn-warning">CREATE</button></a> 
-                	<a href="/read"><button class="btn btn-warning">READ</button></a> 
+					<a href="/"><button class="btn btn-outline-warning text-white">CREATE</button></a> 
+                	<a href="/read"><button class="btn btn-outline-warning text-white">READ</button></a> 
 					</div>
 				</nav>
                 <hr>
+                
                 
         @yield('konten')
             </div>
@@ -41,6 +42,19 @@
         <footer>
             <p class="text-center">&copy; <a href=#>RegginaMarshandi</a>. 2024</p>
         </footer>
+        <form>
+            <label for="colorPicker">Pilih Warna:</label>
+            <input type="color" id="colorPicker" name="colorPicker" oninput="updateColor(this.value)">
+        </form>
+    
+        <p id="selectedColor">Warna yang Dipilih</p>
+    
+        <script>
+            function updateColor(color) {
+                document.getElementById('selectedColor').innerText = `Warna yang Dipilih: ${color}`;
+                document.body.style.backgroundColor = color;
+            }
+        </script>
     </div>
  
 </body>

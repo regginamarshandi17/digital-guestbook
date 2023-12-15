@@ -2,7 +2,7 @@
 @section('konten')
 
 <div class="form-group">
-<form action="read" method="post">
+    <form method="POST" action="{{ url('/store') }}">
 
     {{ csrf_field() }}
     <label for="nama">Name</label>

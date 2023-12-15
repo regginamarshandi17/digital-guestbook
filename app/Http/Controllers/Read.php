@@ -11,7 +11,7 @@ class Read extends Controller
     public function read()
     {
         // Mengambil data guestbook dengan paginate
-        $guests = Guestbook::all();
+        $guests = Guestbook::paginate(5);
 
         // Mengirim data guestbook ke view
         return view('read', ['guests' => $guests]);

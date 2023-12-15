@@ -2,3 +2,34 @@
     background-color: #3498db; /* Ganti dengan warna latar belakang yang diinginkan */
     color: #ffffff; /* Ganti dengan warna teks yang sesuai */
 }
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
