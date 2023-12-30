@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "latihanvuejs",
   "private": true,
   "version": "0.0.0",
@@ -17,4 +18,20 @@
     "@vitejs/plugin-vue": "^4.1.0",
     "vite": "^4.2.0"
   }
+=======
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@popperjs/core": "^2.11.6",
+        "axios": "^1.6.1",
+        "bootstrap": "^5.2.3",
+        "laravel-vite-plugin": "^0.8.0",
+        "sass": "^1.56.1",
+        "vite": "^4.0.0"
+    }
+>>>>>>> 9cea07693759dc388448ae7eaa1f3084c9b834a8
 }
