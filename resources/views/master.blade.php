@@ -32,6 +32,20 @@
 					<a href="/"><button class="btn btn-outline-warning text-white">CREATE</button></a> 
                 	<a href="/read"><button class="btn btn-outline-warning text-white">READ</button></a> 
 					</div>
+                    <!-- Contoh menggunakan tombol -->
+<form action="{{ route('logout') }}" method="post">
+    @csrf
+    <button class="btn btn-warning text-white" type="submit">LOGOUT</button>
+</form>
+
+<!-- Atau contoh menggunakan link -->
+<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+</a>
+
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+    @csrf
+</form>
+
 				</nav>
                 <hr>
                 

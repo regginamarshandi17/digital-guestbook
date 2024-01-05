@@ -7,7 +7,7 @@ use App\Http\Controllers\Update;
 use App\Http\Controllers\Delete;
 use App\Http\Controllers\Save;
 use App\Http\Controllers\GuestbookController;
-
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,5 +39,13 @@ Route::get('/edit/{id}', [GuestbookController::class, 'edit']);
 Route::put('/update/{id}', [GuestbookController::class, 'update']);
 Route::get('/destroy/{id}', [GuestbookController::class, 'destroy']);
 Route::get('/search', [GuestbookController::class, 'search'])->name('search');
+
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+
+Auth::Routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
